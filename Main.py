@@ -2,15 +2,17 @@ from Monomio import Monomio
 from Polinomio import Polinomio
 from Edo import Edo
 
-# f'(x) = -2y
+# f'(x) = y - t^2 + 1
 polinomio = Polinomio()
-polinomio.monomios.append(Monomio(-2, 'y', 1))
+polinomio.monomios.append(Monomio(1, 'y', 1))
+polinomio.monomios.append(Monomio(-1, 'x', 2))
+polinomio.monomios.append(Monomio(1, '', 1))
 
 # Intervalo a calcular
 x1 = 0
 x2 = 2
-y = 1
-h = 0.25
+y = 1.5
+h = 0.2
 edo = Edo(polinomio, h)
 
 i = 0

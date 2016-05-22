@@ -10,7 +10,9 @@ class Polinomio:
         for m in self.monomios:
             if m.literal == 'x':
                 res += m.evaluar(x)
-            else:
+            elif m.literal == 'y':
                 res += m.evaluar(y)
+            else:
+                res += m.evaluar(1)
 
         return res

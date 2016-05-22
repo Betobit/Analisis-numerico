@@ -8,7 +8,9 @@ class Edo:
         self.h = h
 
     def euler(self, x, y):
-        return self.polinomio.evaluar(x, y) * self.h + y
+        r = self.polinomio.evaluar(x, y)
+        #print(r)
+        return r * self.h + y
 
     def rungeKutta(self, x, y):
         k0 = self.polinomio.evaluar(x, y)
