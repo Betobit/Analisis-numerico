@@ -17,7 +17,7 @@ edo = Edo(polinomio, h)
 
 i = 0
 while x1 <= x2:
-    print('{0}, {1}, {2}, {3}'.format(i, x1, y, edo.rungeKutta(x1, y)))
-    y = edo.rungeKutta(x1, y)
+    print('{0}, {1}, {2}, {3}'.format(i, x1, y, edo.rungeKutta4(x1, y)))
+    y = edo.rungeKutta4(x1, y)
     x1 += h
     i += 1
