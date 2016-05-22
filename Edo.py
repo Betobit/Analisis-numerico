@@ -10,7 +10,7 @@ class Edo:
     def euler(self, x, y):
         return self.polinomio.evaluar(x, y) * self.h + y
 
-    def rungeGutia2(self, x, y):
+    def rungeKutta(self, x, y):
         k0 = self.polinomio.evaluar(x, y)
         k1 = self.polinomio.evaluar(self.h + x, y + self.h * k0)
 
