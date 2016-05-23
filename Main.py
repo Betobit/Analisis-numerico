@@ -34,4 +34,4 @@ polinomio.monomios.append(Monomio(-0.12, 'x', 1))
 polinomio.monomios.append(Monomio(20, '', 1))
 
 integracion = Integracion(polinomio)
-print(integracion.simpsonUnTercio(0, 300))
+print(integracion.simpsonTresOctavos(0, 300))
