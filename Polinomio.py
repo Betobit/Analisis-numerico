@@ -2,7 +2,8 @@ from Monomio import Monomio
 
 class Polinomio:
 
-    monomios = []
+    def __init__(self):
+        self.monomios = []
 
     # @return Evalua y suma cada monomio en la lista.
     def evaluar(self, x, y):
